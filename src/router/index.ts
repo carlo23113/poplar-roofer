@@ -1,5 +1,4 @@
 import { createRouter, createWebHistory } from "vue-router";
-
 import MainLayout from "@/layouts/main.vue";
 import BlankLayout from "@/layouts/blank.vue";
 
