@@ -9,6 +9,7 @@
     "prepare": "husky install"
   },
   "dependencies": {
+    "@babel/types": "^7.20.2",
     "@mdi/font": "7.0.96",
     "mitt": "^3.0.0",
     "pinia": "^2.0.24",

@@ -19,7 +19,7 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 #home {
-  background-image: url("https://i0.wp.com/davidwhiteroofs.co.uk/wp-content/uploads/2022/07/homepage-banner-stripe-1.png?w=1600&ssl=1");
+  background-image: url("/home-banner.jpg");
   background-size: cover;
 }
 

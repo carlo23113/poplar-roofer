@@ -3,12 +3,12 @@ import MainLayout from "@/layouts/main.vue";
 import BlankLayout from "@/layouts/blank.vue";
 
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
+  history: createWebHistory(),
   routes: [
     {
       path: "/",
       name: "home",
-      component: import("@/views/home.vue"),
+      component: () => import("@/views/home.vue"),
       meta: {
         layout: MainLayout,
       },
@@ -16,7 +16,7 @@ const router = createRouter({
     {
       path: "/services",
       name: "services",
-      component: import("@/views/services.vue"),
+      component: () => import("@/views/services.vue"),
       meta: {
         layout: MainLayout,
       },
@@ -24,7 +24,7 @@ const router = createRouter({
     {
       path: "/gallery",
       name: "gallery",
-      component: import("@/views/gallery.vue"),
+      component: () => import("@/views/gallery.vue"),
       meta: {
         layout: MainLayout,
       },
@@ -32,7 +32,7 @@ const router = createRouter({
     {
       path: "/reviews",
       name: "reviews",
-      component: import("@/views/reviews.vue"),
+      component: () => import("@/views/reviews.vue"),
       meta: {
         layout: MainLayout,
       },
@@ -40,7 +40,7 @@ const router = createRouter({
     {
       path: "/contact",
       name: "contact",
-      component: import("@/views/contact.vue"),
+      component: () => import("@/views/contact.vue"),
       meta: {
         layout: MainLayout,
       },

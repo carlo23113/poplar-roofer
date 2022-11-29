@@ -1,9 +1,7 @@
 <template>
   <v-app full-height>
-    <v-main>
-      <component :is="$route.meta.layout || 'div'">
-        <RouterView />
-      </component>
-    </v-main>
+    <component :is="$route.meta.layout || 'div'">
+      <RouterView />
+    </component>
   </v-app>
 </template>
